@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to San Jose Zoo. As of 2016, the zoo housed more than one thousand individual animals, representing more than 250 species. It is noted as the birthplace of Koko the gorilla, and, since 1974, the home of Elly, the oldest black rhinoceros in North America."
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <Button
+        android:id="@+id/button1"
+        android:textColor="@color/colorWhite"
+        android:layout_width="99dp"
+        android:layout_height="138dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Call us" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="80dp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="120dp"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

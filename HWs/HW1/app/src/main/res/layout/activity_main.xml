@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimary">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="Amount Borrowed"/>
+        <EditText
+            android:hint="Enter amount here"
+            android:backgroundTint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:id="@+id/borrowedAmount"
+            android:foregroundTintMode="@color/black"
+            android:textSize="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/rateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest Rate"
+            android:textSize="26dp"/>
+        <SeekBar
+            android:id="@+id/interestRate"
+            android:text="Rate"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="100"
+            android:thumbTint="@color/colorPrimaryDark"
+            android:progressTint="@color/black"
+            android:thumbTintMode="@color/black"
+            android:max="200" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Term in years"
+            android:textSize="28dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loanTerm">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 years"
+                android:id="@+id/fifteen_y"
+                android:checked="false"
+                android:buttonTint="@color/black"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 years"
+                android:id="@+id/twenty_y"
+                android:checked="false"
+                android:buttonTint="@color/black"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 years"
+                android:id="@+id/thirty_y"
+                android:checked="false"
+                android:buttonTint="@color/black"/>
+        </RadioGroup>
+        <TextView
+            android:text="Taxes and Insurance"
+            android:textSize="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/tax"
+            android:text="include taxes"
+            android:textSize="26dp"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"/>
+        <CheckBox
+            android:id="@+id/insurance"
+            android:text="include insurance"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/black"
+            android:onClick="calculate"
+            android:layout_marginLeft="15dp"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:text=" "
+            android:textSize="26dp"
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
